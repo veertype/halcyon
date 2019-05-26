@@ -1,0 +1,46 @@
+﻿date: 190518
+preview: "my new preview text"
+
+stories:
+- type: "us/intl"
+  category: "News"
+  storyURL: "https://stories.wf.com/opening-doors-mothers-heart"
+  title: "this is my new title"
+  body: "here is body"
+
+- type: "us/intl"
+  category:
+  storyURL: "https://stories.wf.com/opening-doors-mothers-heart"
+  title: "Opening doors through a mother’s heart"
+  body: "here is body"
+
+- type: "intl"
+  category:
+  storyURL: "https://stories.wf.com/opening-doors-mothers-heart"
+  title: "Intl only"
+  body: "here is body"
+
+- type: "us"
+  category:
+  storyURL: "https://stories.wf.com/opening-doors-mothers-heart"
+  title: "US only"
+  body: "here is body"
+
+- type: "us"
+  category: "HR"
+  storyURL: "https://stories.wf.com/opening-doors-mothers-heart"
+  title: "Opening doors through a mother’s heart"
+  body: "here is body"
+
+- type: "us/terr"
+  category: "CEO"
+  storyURL: "https://stories.wf.com/opening-doors-mothers-heart"
+  title: "Opening doors through a mother’s heart"
+  body: "here is body"
+
+- type: "intl/terr"
+  category: "CEO"
+  storyURL: "https://stories.wf.com/opening-doors-mothers-heart"
+  title: "Opening doors through a mother’s heart INTL verion"
+  body: "here is body"
+

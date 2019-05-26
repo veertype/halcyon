@@ -1,0 +1,32 @@
+
+<!--Start 1st content row here-->
+{% for service in site.data.email.stories %}
+<tr id="FullWidthStoryRow">
+    <td align="left" valign="top" style="padding-bottom:00px; padding-top:20px;" width="28"></td>
+
+    <td align="left" valign="top" class="flex" style="padding-bottom:00px; padding-top:20px;" width="584">
+        <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+            <tbody>
+            <tr>
+                <td>
+                    <!--SUB-CATEGORY NAME AND COLOR-->
+                    <h2 style="font-family: Georgia, serif; font-size:16px; font-weight:normal; color:#702F8A; margin:0px; margin-top:0px; margin-bottom:5px;line-height:normal; border-bottom: 3px solid #702F8A; padding-bottom:5px;">{{ service.vertical }}</h2><!--IMAGE SOURCE URL-->
+                    <a href="{{ service.storyURL }}/?cid=emsub_wfs_em_img_{{ site.data.email.date }}_{{ service.job }}"><img src="{{ service.image }}" alt="" width="584" height="300" class="flex" border="0"></a>
+                    <!--HEADLINE-->
+
+                    <h3 style="font-family: Georgia, serif; font-size:20px; font-weight:normal; margin-top:20px; margin-bottom:5px; padding:0; line-height:normal;">
+                        <a style="text-decoration:none; color:#44464a;" href="{{ service.storyURL }}/?cid=emsub_wfs_em_rdmr_{{ site.data.email.date }}_{{ service.job }}">{{ service.headline }}</a></h3><!--BLURB/DESCRIPTION-->
+
+                    <p>{{ service.body }}</p>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </td>
+
+    <td align="left" valign="top" style="padding-bottom:00px; padding-top:20px;" width="28"></td>
+</tr>
+
+{% endfor %}
+<!--End of first content row-->
+

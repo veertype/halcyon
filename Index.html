@@ -1,0 +1,17 @@
+---
+layout: External
+---
+
+
+{% for service in site.data.email.stories %}
+{% if service.type == "full" %}
+{% include fullModule.html %}
+{% elsif service.type == "half1" %}
+{% include halfModule.html %}
+{% else %}
+{% include halfRightModule.html %}
+
+{% endif %}
+
+
+{% endfor %}

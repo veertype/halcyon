@@ -1,0 +1,29 @@
+---
+
+layout: Teamlink
+
+---
+
+{% for stories in site.data.tml.stories %}
+
+{% assign location = stories.type %}
+    {% case location %}
+        {% when 'us/intl' %}
+        {% if stories.category %}<hr><h2>{{stories.category}}</h2>{% else %}{% endif %}
+        <p><strong><a href="#">{{ stories.title }}</a><strong><br>
+            {{ stories.body }}
+        </p>
+        {% when 'intl' %}
+        {% if stories.category %}<hr><h2>{{stories.category}}</h2>{% else %}{% endif %}
+        <p><strong><a href="#">{{ stories.title }}</a><strong><br>
+            {{ stories.body }}
+        </p>
+        {% when 'intl/terr' %}
+        {% if stories.category %}<hr><h2>{{stories.category}}</h2>{% else %}{% endif %}
+        <p><strong><a href="#">{{ stories.title }}</a><strong><br>
+            {{ stories.body }}
+        </p>
+        {% else %}
+    {% endcase %}
+
+{% endfor %}
