@@ -1,0 +1,6 @@
+ways to handle a 2 column
+
+test for row type at each file and use conditional/switch. no type means continue filling row?
+
+Switch layout file for each different layout request?
+
